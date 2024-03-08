@@ -72,11 +72,12 @@ where
     let s: &str =
         de::Deserialize::deserialize(deserializer).unwrap_or("0");
     
-    match s {
+     match s {
         "undefined" => Ok(0),
         _ => Ok(u64::from_str(s).unwrap())
     }
 }
+
 
 /*** 2023 Game remnant.  Leaving for example.
 fn empty_tba_data() -> Option<String> {
