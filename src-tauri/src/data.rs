@@ -24,10 +24,10 @@ enum MatchType {
 /* Definition of MatchEntry record.  Based upon CSV file headers. */
 #[derive(Default, Debug, Serialize, Deserialize, Clone)]
 pub struct MatchEntry {
-   // #[serde(deserialize_with = "from_match_type_string")]
-    //match_type: MatchType,
-    //#[serde(default = "empty_tba_data")]
-    //pub tba_match_data: Option<String>,
+   /*#[serde(deserialize_with = "from_match_type_string")]
+    match_type: MatchType,
+    #[serde(default = "empty_tba_data")]
+    pub tba_match_data: Option<String>,*/
 
     // Game(2024) settings.
     pub teamNumber: u64,
